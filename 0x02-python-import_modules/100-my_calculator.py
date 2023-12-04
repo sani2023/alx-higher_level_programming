@@ -15,11 +15,11 @@ if __name__ == "__main__":
                 '/': div
                 }
         if argv[2] in ops:
-            a = int(argc[1])
-            b = int(argc[3])
-            op = ops[argc[2]]
-            result = ops(a, b)
-            print('{:d} {:s} {:d} = {:d}'.format(a, argv[2], b, result))
+            num1 = int(argv[1])
+            num2 = int(argv[3])
+            op = ops[argv[2]]
+            result = op(num1, num2)
+            print('{:d} {:s} {:d} = {:d}'.format(num1, argv[2], num2, result))
         else:
             print('Unknown operator. Avaible operators: +, -, *, and /')
             exit(1)
